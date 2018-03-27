@@ -14,7 +14,7 @@ public class StaxStreamProcessorTest {
             XMLStreamReader reader = processor.getReader();
             while (reader.hasNext()) {
                 int event = reader.next();
-                if (event == XMLEvent.START_ELEMENT) {
+                if (event == XMLEvent.S9TART_ELEMENT) {
                     if ("City".equals(reader.getLocalName())) {
                         System.out.println(reader.getElementText());
                     }
